@@ -92,13 +92,12 @@ form{
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
-.required::after {
+
+/* Estilo para campos obrigatórios */
+input[required] + label::after,
+label[for="name"]::after,
+label[for="telefone"]::after,
+label[for="email"]::after {
     content: " *";
     color: red;
-}
-.required input {
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin-bottom: 10px;
-    background-color: #fff;
 }
